@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo Juvenil I</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="logo.png" alt="Grupo Juvenil I">
+        </div>
+        <nav>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+             <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
+              <li><a href="#galerias">Galeria</a></li>
+                 <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="hamburguer" id="hamburguer">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+</header>
+
+    <section class="hero" id="inicio" >
+        <div class="hero-content">
+            <h1>Bienvenido al Grupo Juvenil I</h1>
+            <p>Un lugar para crecer en la fe y la amistad.</p>
+            <button id="btn-mas">Saber más</button>
+        </div>
+    </section>
+
+    <section class="sobre-nosotros" id="sobre-nosotros">
+    <div class="container">
+        <h2>Sobre Nosotros</h2>
+        <p>
+            Somos el <strong>Grupo Juvenil I</strong>, un espacio para jóvenes que buscan crecer en la fe, la amistad y la solidaridad. 
+            Nuestro objetivo es fortalecer valores, fomentar la participación en la comunidad y vivir experiencias que transformen vidas.
+        </p>
+        <div class="objetivos">
+            <h3>Objetivos del grupo:</h3>
+            <ul>
+                <li>Fortalecer la fe y la espiritualidad en los jóvenes.</li>
+                <li>Fomentar la amistad y el trabajo en equipo.</li>
+                <li>Realizar actividades sociales y comunitarias.</li>
+                <li>Desarrollar habilidades y talentos de cada miembro.</li>
+            </ul>
+        </div>
+        <button id="btn-mas-info">Conocer más</button>
+    </div>
+</section>
+
+<section class="galerias" id="galerias">
+    <div class="container">
+        <h2>Galerias</h2>
+        <p>Los mejores momentos</p>
+
+        <div class="galeria-grid">
+            <div class="galeria-item">
+                <img src="evento 1 (1).jpeg" alt="">
+            </div>
+            <div class="galeria-item">
+                <img src="evento 1 (2).jpeg" alt="">
+            </div>
+            <div class="galeria-item">
+                <img src="evento 1 (3).jpeg" alt="">
+            </div>
+            <div class="galeria-item">
+                <img src="evento 1 (5).jpeg" alt="">
+            </div>
+            <div class="galeria-item">
+                <img src="evento 1 (6).jpeg" alt="">
+            </div>
+            
+           
+        </div>
+    </div>
+
+    <!-- Modal para ver imagen grande -->
+    <div id="modal" class="modal">
+        <span class="cerrar">&times;</span>
+        <img class="modal-contenido" id="img-modal">
+        <div id="caption"></div>
+    </div>
+</section>
+
+<section class="contacto" id="contacto">
+    <div class="container">
+        <h2>Contacto</h2>
+        <p>Puedes comunicarte con nosotros a través de los siguientes medios:</p>
+        <ul class="contact-info">
+            <li><strong>Teléfono:</strong> +52 81-12-70-66-85</li>
+            <li><strong>Dirección:</strong> Colonia: Centro de Garcia</li>
+            <li><strong>Redes Sociales:</strong> 
+        <a href="https://www.instagram.com/misioneros_i_sjb/?igsh=a3N6Mm8zZHFvZWF6#" target="_blank">Instagram</a> | 
+            </li>
+        </ul>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Grupo Juvenil I. Todos los derechos reservados.</p>
+</footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
