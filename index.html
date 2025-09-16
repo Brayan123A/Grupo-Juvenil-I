@@ -4,39 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grupo Juvenil I</title>
-    <link rel="shortcut icon" href="" type="image/x-icon">
-    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
     <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <div class="logo">
-            <img src="logo.png" alt="Grupo Juvenil I">
-        </div>
-        <nav>
-        <ul class="nav-links">
-            <li><a href="#inicio">Inicio</a></li>
-             <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
-              <li><a href="#galerias">Galeria</a></li>
-                 <li><a href="#contacto">Contacto</a></li>
-            </ul>
-            <div class="hamburguer" id="hamburguer">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </nav>
-</header>
 
-    <section class="hero" id="inicio" >
-        <div class="hero-content">
+    <header class="header">
+        <img src="logo.png" alt="Logo" id="logoBtn" class="logo">
+        <nav>
+        <div class="hamburger" onclick="toggleMenu()">
+            
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
+                <li><a href="#miembros">Miembros del Grupo</a></li>
+                <li><a href="#galerias">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="Inicio">
+            <div class="hero-image"></div>
             <h1>Bienvenido al Grupo Juvenil I</h1>
             <p>Un lugar para crecer en la fe y la amistad.</p>
-            <button id="btn-mas">Saber más</button>
-        </div>
-    </section>
+            <a href="#" class="btn" id="saberMasBtn">Saber más</a>
+        </section>
+    </main>
 
-    <section class="sobre-nosotros" id="sobre-nosotros">
+  <section class="sobre-nosotros" id="sobre-nosotros">
     <div class="container">
         <h2>Sobre Nosotros</h2>
         <p>
@@ -56,10 +57,54 @@
     </div>
 </section>
 
-<section class="galerias" id="galerias">
+<section class="members" id="miembros">
     <div class="container">
-        <h2>Galerias</h2>
-        <p>Los mejores momentos</p>
+        <h2>Los miembros del grupo</h2>
+        <div class="member-grid">
+            <div class="member-card">
+                <img src="mari.png" alt="Foto del miembro 1" class="member-photo">
+                <h3>Marisa</h3>
+                <p>Líder de grupo</p>
+            </div>
+           
+            <div class="member-card">
+                <img src="foto brayan.jfif" alt="Foto del miembro 3" class="member-photo">
+                <h3>Brayan Jesus</h3>
+                <p>Creador del sitio web</p>
+            </div>
+
+             <div class="member-card">
+                <img src="diego.png" alt="Foto del miembro 2" class="member-photo">
+                <h3>Diego orlando</h3>
+                <p>Recursos humanos</p>
+            </div>
+
+             <div class="member-card">
+                <img src="sofia.png" alt="Foto del miembro 2" class="member-photo">
+                <h3>Sofia</h3>
+                <p>Estudiante</p>
+            </div>
+
+             <div class="member-card">
+                <img src="david.png" alt="Foto del miembro 2" class="member-photo">
+                <h3>David</h3>
+                <p>Trabajador</p>
+            </div>
+
+           
+        </div>
+
+  
+    </div>
+</section>
+
+
+
+
+    <section class="galerias" id="galerias">
+    <div class="container">
+        <h2>Galería</h2>
+        <p>Los mejores momentos en grupo.</p>
 
         <div class="galeria-grid">
             <div class="galeria-item">
@@ -74,11 +119,33 @@
             <div class="galeria-item">
                 <img src="evento 1 (5).jpeg" alt="">
             </div>
+
             <div class="galeria-item">
                 <img src="evento 1 (6).jpeg" alt="">
             </div>
+
+            <div class="galeria-item">
+                <img src="evento 7.jpeg" alt="">
+            </div>
+             <div class="galeria-item">
+                <img src="convivio (1).jpeg" alt="">
+            </div>
+             <div class="galeria-item">
+                <img src="convivio (2).jpeg" alt="">
+            </div>
+             <div class="galeria-item">
+                <img src="convivio (3).jpeg" alt="">
+            </div>
+
+             <div class="galeria-item">
+                <img src="convivio (4).jpeg" alt="">
+            </div>
+
+              <div class="galeria-item">
+                <img src="convivio (5).jpeg" alt="">
+            </div>
+
             
-           
         </div>
     </div>
 
@@ -96,9 +163,12 @@
         <p>Puedes comunicarte con nosotros a través de los siguientes medios:</p>
         <ul class="contact-info">
             <li><strong>Teléfono:</strong> +52 81-12-70-66-85</li>
-            <li><strong>Dirección:</strong> Colonia: Centro de Garcia</li>
+            
+            <li><strong>Dirección:</strong> Calle Genaro Garza Garcia</li>
             <li><strong>Redes Sociales:</strong> 
-        <a href="https://www.instagram.com/misioneros_i_sjb/?igsh=a3N6Mm8zZHFvZWF6#" target="_blank">Instagram</a> | 
+                 | 
+                <a href="https://www.instagram.com/misioneros_i_sjb/?igsh=a3N6Mm8zZHFvZWF6#" target="_blank">Instagram</a> | 
+                
             </li>
         </ul>
     </div>
@@ -107,6 +177,7 @@
 <footer>
     <p>&copy; 2025 Grupo Juvenil I. Todos los derechos reservados.</p>
 </footer>
+
 
 
 

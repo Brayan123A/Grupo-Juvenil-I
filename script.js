@@ -1,34 +1,77 @@
-// Selecciona los elementos
-const hamburger = document.querySelector('#hamburguer');
-const navLinks = document.querySelector('.nav-links');
 
-// Agrega evento de clic al botón hamburguesa
-hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    hamburger.classList.toggle('active');
+document.getElementById('btn-mas-info').addEventListener('click', () => {
+    alert('¡Bienvenido al Grupo Juvenil I! Próximamente podrás conocer más sobre nuestras actividades y proyectos.');
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    // Encuentra el botón por su ID
+    const saberMasButton = document.getElementById('saberMasBtn');
 
-
-
-document.getElementById('btn-mas').addEventListener('click', () => {
-    alert('¡Bienvenido al Grupo Juvenil I! Aquí podrás conocer más sobre nuestras actividades.');
+    // Verifica que el botón existe antes de añadir el evento
+    if (saberMasButton) {
+        // Agrega un evento de escucha para el clic
+        saberMasButton.addEventListener('click', function(event) {
+            // Previene el comportamiento por defecto del enlace (evita que salte a la parte superior)
+            event.preventDefault(); 
+            // Muestra la alerta
+            alert("¡Bienvenido al Grupo Juvenil I! Aquí podrás conocer más sobre nuestras actividades.");
+        });
+    }
 });
-// Selecciona todos los enlaces del menú
-const menuLinks = document.querySelectorAll('header nav ul li a');
 
-menuLinks.forEach(link => {
-    link.addEventListener('click', function(e) {
-        e.preventDefault(); // previene el salto instantáneo
-        const targetId = this.getAttribute('href').substring(1); // obtiene el id
-        const targetSection = document.getElementById(targetId);
+document.addEventListener('DOMContentLoaded', function() {
+    // Funcionalidad para el botón "Saber más"
+    const saberMasButton = document.getElementById('saberMasBtn');
+    if (saberMasButton) {
+        saberMasButton.addEventListener('click', function(event) {
+            event.preventDefault(); 
+            alert("Bienvenidos a la página grupo juvenil I");
+        });
+    }
 
-        // Scroll suave hacia la sección
-        targetSection.scrollIntoView({
-            behavior: 'smooth'
+  
+    // Funcionalidad para el desplazamiento suave de los enlaces de navegación
+    const navLinks = document.querySelectorAll('a[href^="#inicio"]');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
         });
     });
 });
+
+
+
+
+    const logoButton = document.getElementById('logoBtn');
+    if (logoButton) {
+        logoButton.addEventListener('click', function(event) {
+            event.preventDefault();
+            alert("¡Has hecho clic en el logotipo!");
+        });
+    }
+
+    const navLinks = document.querySelectorAll('a[href^="#"]');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
 
 // Seleccionar todos los items de la galería
 const galeriaItems = document.querySelectorAll('.galeria-item img');
@@ -57,4 +100,12 @@ modal.onclick = function(e) {
         modal.style.display = "none";
     }
 }
+
+function toggleMenu() {
+    const navMenu = document.querySelector('.nav-menu');
+    navMenu.classList.toggle('active');
+}
+
+
+
 
