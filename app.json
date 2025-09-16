@@ -1,58 +1,20 @@
 {
-  "app": {
-    "name": "Grupo Juvenil I",
-    "version": "1.0",
-    "description": "App del Grupo Juvenil I para móviles",
-    "logo": "logo.png",
-    "main": "index.html",
-    "actions": [
-      {
-        "type": "alert",
-        "message": "¡Descarga nuestra app para disfrutar de todas las funciones!"
-      }
-    ],
-    "pages": [
-      {
-        "id": "inicio",
-        "title": "Inicio",
-        "content": "Bienvenido al Grupo Juvenil I. Un lugar para crecer en la fe y la amistad.",
-        "logo": "logo.png"
-      },
-      {
-        "id": "sobre-nosotros",
-        "title": "Sobre Nosotros",
-        "content": "Somos el Grupo Juvenil I, un espacio para jóvenes que buscan crecer en la fe, la amistad y la solidaridad."
-      },
-      {
-        "id": "miembros",
-        "title": "Miembros del Grupo",
-        "content": [
-          { "nombre": "Marisa", "rol": "Líder de grupo", "foto": "mari.png" },
-          { "nombre": "Brayan Jesus", "rol": "Creador del sitio web", "foto": "foto brayan.jfif" },
-          { "nombre": "Diego Orlando", "rol": "Recursos humanos", "foto": "diego.png" },
-          { "nombre": "Sofia", "rol": "Estudiante", "foto": "sofia.png" },
-          { "nombre": "David", "rol": "Trabajador", "foto": "david.png" }
-        ]
-      },
-      {
-        "id": "galerias",
-        "title": "Galería",
-        "content": [
-          "evento 1 (1).jpeg",
-          "evento 1 (2).jpeg",
-          "evento 1 (3).jpeg",
-          "evento 1 (5).jpeg"
-        ]
-      },
-      {
-        "id": "contacto",
-        "title": "Contacto",
-        "content": {
-          "telefono": "+52 81-12-70-66-85",
-          "direccion": "Calle Genaro Garza Garcia",
-          "instagram": "https://www.instagram.com/misioneros_i_sjb/?igsh=a3N6Mm8zZHFvZWF6#"
-        }
-      }
-    ]
-  }
+  "name": "Grupo Juvenil I",
+  "short_name": "Juvenil I",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0d6efd",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }
